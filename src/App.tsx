@@ -1,7 +1,7 @@
-import Message from "./Message"
+import Card from "./components/card"
 
 function App(){
-  return <div> <Message /></div>
+  return <div> <Card /></div>
 }
 
 export default App;
