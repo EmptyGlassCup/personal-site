@@ -1,5 +1,3 @@
-import Pull_Tab from "./pull_tab";
-
 export default function Card() {
     return (
         <div className = "w-90 h-150 p-10 border-solid border-black border flex flex-col items-center justify-between relative">
@@ -21,8 +19,6 @@ export default function Card() {
                     a
                 </button>
             </div>
-
-            <Pull_Tab />
         </div>
     );
 };

@@ -1,6 +1,6 @@
-export default function Pull_Tab(){
+export default function Pull_Tab({ onAddClick }){
     return(
-        <div className="w-15 h-15 border-black border absolute -right-15">
+        <div onClick={ onAddClick } className="w-15 h-15 border-black border absolute -right-15 top-10">
 
         </div>
     )

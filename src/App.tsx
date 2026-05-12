@@ -1,7 +1,7 @@
-import Card from "./components/card";
+import Wrapper from "./components/wrapper";
 
 function App(){
-  return <div > <Card /></div>
+  return <div > <Wrapper /></div>
 }
 
 export default App;
