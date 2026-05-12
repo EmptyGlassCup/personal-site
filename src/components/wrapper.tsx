@@ -11,9 +11,9 @@ export default function Wrapper(){
     }
 
     return (
-        <div id = "wrapper" className = {`flex relative ${ infoCard ? "w-180" : "w-90"} transition-width duration-500 ease-in-out`}>
+        <div id = "wrapper" className = {`flex relative ${ infoCard ? "w-179" : "w-90"} transition-width duration-400 ease-in-out`}>
             <Card />
-            <Info_Card onAddClick = { addCard } />
+            <Info_Card onAddClick = { addCard } infoCard={ infoCard } />
         </div>
     );
 }
