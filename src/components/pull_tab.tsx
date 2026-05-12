@@ -1,4 +1,8 @@
-export default function Pull_Tab({ onAddClick }){
+interface Pull_TabProps{
+    onAddClick: () => void;
+}
+
+export default function Pull_Tab({ onAddClick }: Pull_TabProps){
     return(
         <div onClick={ onAddClick } className={`
         w-20 h-20

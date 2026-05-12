@@ -1,6 +1,11 @@
 import Pull_Tab from "./pull_tab";
 
-export default function Info_Card({ onAddClick, infoCard }){
+interface Info_CardProps {
+    onAddClick: () => void;
+    infoCard: boolean;
+}
+
+export default function Info_Card({ onAddClick, infoCard }: Info_CardProps){
     return(
         <div className = {`
         h-150 p-10
