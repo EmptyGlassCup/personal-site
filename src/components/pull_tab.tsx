@@ -11,7 +11,7 @@ export default function Pull_Tab({ onAddClick }: Pull_TabProps){
         hover:bg-[#9CEAEF]
         duration-100
         rounded-r-3xl
-        absolute -right-25 top-60
+        absolute -right-25
         flex flex-col justify-center items-center`}>
 
             <svg className = "w-7"viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
