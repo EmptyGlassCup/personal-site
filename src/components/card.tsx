@@ -1,6 +1,6 @@
 export default function Card() {
     return (
-        <div className = "w-90 h-150 p-10 border-solid border-black border flex flex-col items-center justify-between relative">
+        <div className = "w-90 h-150 p-10 border-solid border-black border bg-white flex flex-col items-center justify-between relative z-1">
             <div className = "rounded-full border-solid border-black border w-40 h-40"></div>
 
             <div>
