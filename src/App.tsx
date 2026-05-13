@@ -1,17 +1,22 @@
 import { useState } from "react";
 import Wrapper from "./components/wrapper";
 
-const page = document.querySelector('html');
+const body = document.querySelector('body')
+
+let userDark = false;
+// Detect if the user prefers darkmode, and adjust accordingly
+if (window.matchMedia('(prefers-color-scheme: dark)').matches){
+  console.log('true');
+  userDark = true;
+  body?.classList.add('dark');
+}
 
 function App(){
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(userDark);
 
-  // Detect if the user prefers darkmode, and adjust accordingly
-  if (window.matchMedia('(prefers-color-scheme: dark)').matches){
-    setDarkMode(!darkMode);
-  }
 
   function toggleDark(){
+    body?.classList.remove('dark');
     setDarkMode(!darkMode);
   }
 
