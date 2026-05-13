@@ -3,7 +3,7 @@ export default function Card() {
         <div id = "main-card" className = {`
         w-90 h-150 p-10 pt-20
         border-solid border-[#0B3954] dark:border-[#3dccc7] border-5 rounded-l-4xl
-        bg-white dark:bg-[#0B3954]
+        bg-white dark:bg-[#0B3954] duration-100
         flex flex-col items-center justify-between
         relative z-2`}>
 
