@@ -1,15 +1,22 @@
-export default function Card() {
+interface Info_CardProps {
+    infoCard: boolean;
+}
+
+export default function Card({ infoCard }: Info_CardProps) {
     return (
         <div id = "main-card" className = {`
-        w-90 h-150 p-10 pt-20
-        border-solid border-[#0B3954] dark:border-[#3dccc7] border-5 rounded-l-4xl
+        w-75 h-110 p-5 pt-20
+        md:w-90 md:h-150 md:p-10 md:pt-20
+        border-solid border-[#0B3954] dark:border-[#3dccc7] border-5 rounded-4xl md:rounded-r-none
         bg-white dark:bg-[#0B3954] duration-100
         flex flex-col items-center justify-between
-        relative z-2`}>
+        top-0
+        ${infoCard ? '-translate-y-100 md:translate-y-0' : 'translate-y-0'}
+        z-2`}>
 
             <div id="main-top" className="flex flex-col items-center gap-4">
-                <div className = {`rounded-full border-solid border-[#0B3954] dark:border-[#3dccc7] border-5 w-40 h-40`}></div>
-                <p className = "text-5xl text-center font-bold font-mono text-[#3dccc7] dark:text-[#C4FFF9]">Hyunjae Ha</p>
+                <div className = {`rounded-full border-solid border-[#0B3954] dark:border-[#3dccc7] border-5 w-30 md:w-40 h-30 md:h-40`}></div>
+                <p className = "text-3xl md:text-5xl text-center font-bold font-mono text-[#3dccc7] dark:text-[#C4FFF9]">Hyunjae Ha</p>
             </div>
 
             <div id = "logos" className="flex justify-center items-center gap-3">
@@ -26,7 +33,7 @@ export default function Card() {
                 </a>
             </div>
 
-            <div id = "bottom-links">
+            <div id = "bottom-links" className='flex justify-center'>
                 <p className = "font-mono text-xs dark:text-[#3dccc7]">Hello. Welcome to my Notebook! :)</p>
             </div>
         </div>
