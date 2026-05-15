@@ -31,7 +31,7 @@ Error generating stack: `+e.message+`
         ${t?`md:w-90`:`md:w-80`}
         absolute md:right-0 z-1
         flex flex-col justify-center items-center
-        dark:text-[#3dccc7]`,children:[(0,f.jsx)(`p`,{children:`I really like Hatsune Miku`}),(0,f.jsx)(`p`,{children:`Did you stumble upon this site?`}),(0,f.jsx)(`p`,{children:`It's still under construction. Sorry!`}),(0,f.jsx)(m,{onAddClick:e})]})}function g(){let[e,t]=(0,l.useState)(!1);function n(){t(!e)}return(0,f.jsxs)(`div`,{id:`wrapper`,className:`
+        dark:text-[#3dccc7]`,children:[(0,f.jsx)(`p`,{children:`Hyunjae Ha`}),(0,f.jsx)(`p`,{children:`Undergraduate Student @University of Melbourne`}),(0,f.jsx)(`p`,{children:`Contact: contact@hyunha.com`}),(0,f.jsx)(m,{onAddClick:e})]})}function g(){let[e,t]=(0,l.useState)(!1);function n(){t(!e)}return(0,f.jsxs)(`div`,{id:`wrapper`,className:`
         flex items-center
         relative
         ${e?`md:w-179 md:h-150`:`md:w-90 md:h-150`}
