@@ -11,9 +11,17 @@ export default function Wrapper(){
     }
 
     return (
-        <div id = "wrapper" className = {`flex items-center relative ${ infoCard ? "w-179" : "w-90"} transition-width duration-400 ease-in-out`}>
-            <Card />
+        <div id = "wrapper" className = {`
+        flex items-center justify-center
+        relative
+
+        w-75 h-110
+        transition-width duration-400
+        ease-in-out`}>
+            <Card infoCard={ infoCard }/>
             <Info_Card onAddClick = { addCard } infoCard={ infoCard } />
         </div>
     );
 }
+
+//
