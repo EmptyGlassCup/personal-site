@@ -16,9 +16,9 @@ export default function Info_Card({ onAddClick, infoCard }: Info_CardProps){
         absolute md:right-0 z-1
         flex flex-col justify-center items-center
         dark:text-[#3dccc7]`}>
-            <p>I really like Hatsune Miku</p>
-            <p>Did you stumble upon this site?</p>
-            <p>It's still under construction. Sorry!</p>
+            <p>Hyunjae Ha</p>
+            <p>Undergraduate Student @University of Melbourne</p>
+            <p>Contact: contact@hyunha.com</p>
             <Pull_Tab onAddClick={ onAddClick } />
         </div>
     );
