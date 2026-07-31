@@ -16,7 +16,11 @@ export default function Project_Card({ onAddClick, projectCard }: Info_CardProps
         absolute md:right-0
         flex flex-col justify-center items-center
         dark:text-[#3dccc7]`}>
-            <p className="text-center font-mono text-xs dark:text-[#3dccc7] font-bold">Project Card</p>
+            <p className="text-center font-mono text-xs dark:text-[#3dccc7] font-bold">Neural Network Circuit Finder</p>
+            <p className="text-center font-mono text-xs dark:text-[#3dccc7]">Finds a valid circuit wiring of a given truth table</p>
+            <a href="https://github.com/EmptyGlassCup/neuralnetwork-circuit-learner" target="_blank">
+                <p className="text-center font-mono text-xs dark:text-[#3dccc7] underline">GITHUB</p>
+            </a>
             <Project_Tab onAddClick={ onAddClick } />
         </div>
     );
