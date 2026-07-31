@@ -7,7 +7,7 @@ export default function Card({ infoCard, projectCard }: Info_CardProps) {
     return (
         <div id = "main-card" className = {`
         w-75 h-110 p-5 pt-20
-        z-2
+        z-3
         md:w-90 md:h-150 md:p-10 md:pt-20
         border-solid border-[#0B3954] dark:border-[#3dccc7] border-5 rounded-4xl md:rounded-r-none
         bg-white dark:bg-[#0B3954] duration-100

@@ -9,10 +9,10 @@ export default function Info_Card({ onAddClick, infoCard }: Info_CardProps){
     return(
         <div id="info-card" className = {`
         w-75 h-110 md:h-145 p-10
-        border-solid border-[#0B3954] border-5 rounded-4xl md:rounded-l-none dark:border-[#3dccc7]
+        border-solid border-[#0B3954] border-5 border-l-0 rounded-4xl md:rounded-l-none dark:border-[#3dccc7]
         bg-white dark:bg-[#0B3954]
         [transition:width_400ms,background-color_100ms]
-        ${ infoCard ? 'md:w-90 z-1' : 'md:w-80 z-0'}
+        ${ infoCard ? 'md:w-90 z-2' : 'md:w-80 z-1'}
         absolute md:right-0
         flex flex-col justify-center items-center
         dark:text-[#3dccc7]`}>
