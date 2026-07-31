@@ -1,17 +1,19 @@
 interface Info_CardProps {
     infoCard: boolean;
+    projectCard: boolean;
 }
 
-export default function Card({ infoCard }: Info_CardProps) {
+export default function Card({ infoCard, projectCard }: Info_CardProps) {
     return (
         <div id = "main-card" className = {`
         w-75 h-110 p-5 pt-20
+        z-2
         md:w-90 md:h-150 md:p-10 md:pt-20
         border-solid border-[#0B3954] dark:border-[#3dccc7] border-5 rounded-4xl md:rounded-r-none
         bg-white dark:bg-[#0B3954] duration-100
         flex flex-col items-center justify-between
         top-0
-        ${infoCard ? '-translate-y-100 md:translate-y-0' : 'translate-y-0'}
+        ${infoCard || projectCard ? '-translate-y-100 md:translate-y-0' : 'translate-y-0'}
         z-2`}>
 
             <div id="main-top" className="flex flex-col items-center gap-4">
