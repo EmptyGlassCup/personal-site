@@ -1,6 +1,6 @@
 import Card from "./card";
 import Info_Card from "./info_card";
-import { use, useState } from "react";
+import { useState } from "react";
 import Project_Card from "./project_card";
 import Background_Card from "./background_card";
 
