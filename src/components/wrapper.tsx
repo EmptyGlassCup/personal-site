@@ -1,11 +1,12 @@
 import Card from "./card";
 import Info_Card from "./info_card";
-import { useState } from "react";
+import { use, useState } from "react";
 import Project_Card from "./project_card";
 import Background_Card from "./background_card";
 
 
 export default function Wrapper(){
+    const [isBig, setBig] = useState(false);
     const [infoCard, setInfoCard] = useState(false);
     const [projectCard, setProjectCard] = useState(false);
 
@@ -14,12 +15,18 @@ export default function Wrapper(){
         if (projectCard){
         setProjectCard(!projectCard)
         }
+        else{
+            setBig(!isBig)
+        }
     }
 
     function ProjectCard(){
         setProjectCard(!projectCard)
         if (infoCard){
             setInfoCard(!infoCard)
+        }
+        else{
+            setBig(!isBig)
         }
     }
 
@@ -34,7 +41,7 @@ export default function Wrapper(){
             <Card infoCard={ infoCard } projectCard= {projectCard}/>
             <Info_Card onAddClick = { InfoCard } infoCard={ infoCard } />
             <Project_Card onAddClick = { ProjectCard } projectCard = { projectCard } />
-            <Background_Card />
+            <Background_Card isBig = { isBig }/>
         </div>
     );
 }
