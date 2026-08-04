@@ -35,10 +35,14 @@ function App(){
 
       <Wrapper />
 
-      <div className='absolute flex bottom-0 items-center gap-1 text-[#6c757d]'>
-        <p>©</p>
-        <p className='font-mono text-xs'>2026 Hyunjae Ha</p>
+      <div className='flex flex-col absolute bottom-0 text-[#6c757d] items-center m-4'>
+        <div className='flex items-center gap-1'>
+          <p>©</p>
+          <p className='font-mono text-xs'>2026 Hyunjae Ha</p>
+        </div>
+          <p className='font-mono text-xs'>This site was designed and built without AI</p>
       </div>
+
     </div>
   )
 }
