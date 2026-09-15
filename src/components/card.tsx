@@ -19,7 +19,7 @@ export default function Card({ infoCard, projectCard }: Info_CardProps) {
             <div id="main-top" className="flex flex-col items-center gap-4">
                 <div className = {`rounded-full border-solid border-[#0B3954] dark:border-[#3dccc7] border-5 w-30 md:w-40 h-30 md:h-40 overflow-hidden`}>
                     <img 
-                        src="src/assets/temp_pfp.png" 
+                        src="public/temp_pfp.png" 
                         className="w-full h-full object-cover object-bottom"
                     />
                 </div>
